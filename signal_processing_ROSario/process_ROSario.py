@@ -15,7 +15,7 @@ class SignalProcessor(Node):
         self.subscription1 #No unusedvariable warning
         
         self.publisher2 = self.create_publisher(Float32, 'proc_signal_ROSario', 10)
-        timer_period = 0.25 # 4 Hz
+        timer_period = 0.2 # 5 Hz
         self.timer = self.create_timer(timer_period, self.talker_callback)
 
         self.y = 0
